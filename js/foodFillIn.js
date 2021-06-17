@@ -16,7 +16,7 @@ function foodFillIn(){
       }
     }
   };
-  xhttp.open("POST", "../resources/countries.txt", true);
+  xhttp.open("POST", "../php/retrieve_information.php", true);
   xhttp.send();
 }
 

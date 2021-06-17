@@ -1,0 +1,1 @@
+create table fooddb.food_table (id bigint(20) unsigned not null auto_increment, food varchar(255), date_eaten varchar(255), primary key (id));

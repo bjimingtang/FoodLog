@@ -25,6 +25,9 @@
       <input type="submit" value="Add" />
     </form>
 
+    <input type="date" id="dateToFind"></input>
+    <button onclick="">Display food from the chosen date</button>
+
   </body>
   <script src="../js/foodFillIn.js"></script>
 </html>
