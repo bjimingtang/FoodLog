@@ -1,5 +1,6 @@
 <?php
   try {
+    require_once "database.php";
     session_start();
     // don't let blank submissions in
     if ($_POST["food"] == "" || $_POST["date"] == "") {

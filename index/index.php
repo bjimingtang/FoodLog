@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Donor Form</title>
+    <title>Food Log</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -26,7 +26,8 @@
     </form>
 
     <input type="date" id="dateToFind"></input>
-    <button onclick="">Display food from the chosen date</button>
+    <button onclick="foodFillIn()">Display food from the chosen date</button>
+    <div id="displayDiv"></div>
 
   </body>
   <script src="../js/foodFillIn.js"></script>

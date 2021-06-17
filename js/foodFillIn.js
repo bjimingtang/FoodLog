@@ -7,18 +7,12 @@ function foodFillIn(){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-
-      for (var country in countryArray) {
-        var option = document.createElement("p");
-        option.value = countryArray[country];
-        option.text = countryArray[country];
-        countrySelect.add(option);
-      }
+      var elementToAppend = document.createElement("p");
+      elementToAppend.innerText = this.responseText;
+      document.getElementById("displayDiv").appendChild(elementToAppend);
     }
   };
   xhttp.open("POST", "../php/retrieve_information.php", true);
-  xhttp.send();
+  xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhttp.send("date=" + document.getElementById("dateToFind").value);
 }
-
-// execute the above function on load
-countryFillIn();
